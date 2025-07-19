@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#tlt{
+  color: greenyellow;
+}
+
+#background{
+  background-color: black;
+}
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: greenyellow;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  background-color: limegreen;
+}
+
+h3{
+  color: antiquewhite;
+}
