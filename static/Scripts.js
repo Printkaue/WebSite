@@ -1,5 +1,5 @@
 function ClicouEmSim() {
-  fetch('https://website-9cmm.onrender.com', {
+  fetch('https://website-9cmm.onrender.com/votar', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ opcao: 'sim' })
@@ -14,7 +14,7 @@ function ClicouEmSim() {
 }
 
 function ClicouEmNao() {
-  fetch('https://website-9cmm.onrender.com', {
+  fetch('https://website-9cmm.onrender.com/votar', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ opcao: 'nao' })
@@ -29,7 +29,7 @@ function ClicouEmNao() {
 }
 
 function CarregarDados() {
-  fetch('https://website-9cmm.onrender.com')
+  fetch('https://website-9cmm.onrender.com/votos')
     .then(res => res.json())
     .then(data => {
       document.getElementById("vs").textContent = data.sim;
