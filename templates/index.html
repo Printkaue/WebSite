@@ -1,29 +1,22 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="pt-BR">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fala Aí 🎙️</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-<script src="{{ url_for('static', filename='Scripts.js') }}"></script>
-  
-  <title>Tu gosta de peixe com farinha ?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body id="background">
-  <h1 id="tlt">
-    Tu gosta de peixe com farinha ?
-  </h1>
-  
-  <script>CarregarDados()</script>
-  
-  <button onclick='ClicouEmSim()'>Sim</button>
-  <button onclick='ClicouEmNao()'>Não</button>
-  <h3>Votos para sim: </h3>
-  <h3 id="vs">0</h3>
-  
-  <h3>Votos para não: </h3>
-  <h3 id="vn">0</h3>
-  
+<body>
+  <div class="container">
+    <h1>Fala Aí 🎙️</h1>
+    <textarea id="texto" placeholder="Digite seu texto..."></textarea>
+    <button onclick="gerarVoz()">▶️ Ouvir</button>
+    <audio id="audio" controls></audio>
+    <button id="bbb" onclick="BaixarAudio()">⬇️ Baixar MP3</button>
+    <footer>© KaueVirgolino</footer>
+  </div>
 
+  <script src="{{ url_for('static', filename='Scripts.js') }}"></script>
 </body>
 </html>
